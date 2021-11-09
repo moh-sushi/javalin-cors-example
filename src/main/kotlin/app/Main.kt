@@ -20,6 +20,7 @@ fun main() {
     }.start(80)
 
     Javalin.create {
+        it.contextPath = "ui"
         it.addStaticFiles("/public", Location.CLASSPATH)
     }.start(8081)
 
