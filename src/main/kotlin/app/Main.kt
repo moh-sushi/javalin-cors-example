@@ -8,7 +8,7 @@ import java.util.*
 fun main() {
 
     Javalin.create {
-        it.contextPath = "/cors"
+        it.contextPath = "/api"
         it.enableCorsForAllOrigins()
         it.enableDevLogging()
     }.get("/") { ctx ->
