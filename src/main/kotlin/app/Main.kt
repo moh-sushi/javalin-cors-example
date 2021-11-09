@@ -5,7 +5,7 @@ import io.javalin.http.staticfiles.Location
 import org.json.JSONObject
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
 
     Javalin.create {
         it.enableCorsForAllOrigins()
